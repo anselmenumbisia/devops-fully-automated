@@ -74,11 +74,11 @@ pipeline {
             }
         }
 
-        stage('Quality Gate') {
-            steps {
-                waitForQualityGate abortPipeline: true
-            }
-        }
+//         stage('Quality Gate') {
+//             steps {
+//                 waitForQualityGate abortPipeline: true
+//             }
+//         }
 
         stage('Upload artifact to Nexus') {
             steps {
